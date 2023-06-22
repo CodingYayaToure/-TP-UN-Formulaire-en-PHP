@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP-UN FORMULAIRE en php</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" href="images/icon.png">
+</head>
+<body>
+    <div class="container">
+        <h1>TP-UN FORMULAIRE en php</h1>
+        <div class="form-container">
+            <h3>Formulaire</h3>
+            <form method="post" action="response.php">
+                <div class="row">
+                    <label for="prenom">Prénom <span>*</span></label><br>
+                    <input name="prenom" id="prenom" type="text" autofocus required>
+
+                </div>
+                <div class="row">
+                    <label for="nom">Nom <span>*</span></label><br>
+                    <input name="nom" id="nom" required type="text">
+                </div>
+                <div class="row">
+                    <label for="sexe">Genre</label>
+                    <input type="radio" id="sexe" name="sexe" value="H" checked>Masculin
+                    <input type="radio" name="sexe" value="F">Féminin
+                </div>
+                <div class="row">
+                    <label for="status">Situation matrimoniale</label>
+                    <select id="status" name="status">
+                        <option disabled>Choisissez</option>
+                        <option value="1">Célibataire</option>
+                        <option value="2">Marié(e)</option>
+                        <option value="3">Divorcé(e)</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label for="login">Nom d'utilisateur <span>*</span></label>
+                    <input id="login" name="login" type="text" required>
+                </div>
+                <div class="row">
+                    <label for="pwd">Mot de passe <span>*</span></label>
+                    <input name="pwd" id="pwd" type="password" required>
+                </div>
+
+                <div class="row chbox">
+                    <input type="checkbox" name="debutant" checked> Je suis débutant en PHP
+                </div>
+                <input type="submit" name="btOk" id="btnok" value="Envoyer">
+            </form>
+        </div>
+    </div>
+</body>
+</html>

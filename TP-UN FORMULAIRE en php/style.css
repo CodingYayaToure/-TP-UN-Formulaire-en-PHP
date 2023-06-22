@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    background-color: aliceblue;
+}
+.container{
+    display: grid;
+    grid-auto-columns: auto;
+    grid-auto-rows: 100px;
+}
+.form-container{
+    width: 60%;
+    height: fit-content;
+    border-style: solid;
+    border-color: darkcyan;
+    border-radius: 20px;
+    border-width: 3px;
+    margin-left: 20%;
+    display: grid;
+}
+.row{
+    margin: 20px 10px;
+    width: 100%;
+    text-align: start;
+    margin: auto auto 20px 5%;
+}
+.row input[type="text"],input[type="password"]{
+    width: 90%;
+}
+select,.chbox{
+    width: 60%;
+    font-size: 18px;
+}
+span{
+    color: red;
+    font-weight: bolder;
+}
+.row label{
+    font-weight: bolder;
+}
+input{
+    font-size: 18px;
+    font-weight: normal;
+}
+#btnok{
+    background-color: transparent;
+    border-radius: 5px;
+    border-color: darkcyan;
+    color: darkcyan;
+    margin: auto auto 20px auto;
+}
+#btnok:hover{
+    background-color: darkcyan;
+    color: white;
+}
+.form-container h3{
+    text-transform: uppercase;
+    color: darkcyan;
+}
